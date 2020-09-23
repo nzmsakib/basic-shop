@@ -1,0 +1,59 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables starts */
+:root {
+    --colorPrimary: #3366ff;
+    --colorSecondary: #e6ecff;
+}
+/* Variables ends  */
+
+/* Global Classes starts */
+.color-p {
+    color: var(--colorPrimary);
+}
+
+.color-s {
+    color: var(--colorSecondary);
+}
+
+.bg-p {
+    background: var(--colorPrimary);
+}
+
+.bg-s {
+    background: var(--colorSecondary);
+}
+
+.btns-primary {
+    background: var(--colorPrimary);
+    color: var(--colorSecondary);
+}
+
+.centre-v {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.space-v {
+    margin-top: 50px;
+    display: block;
+}
+/* Global Classes ends */
+
+/* Custom Slider starts */
+#slider .slider-inner .slider-item {
+    background: var(--colorSecondary);
+    color: tomato;
+    font-size: xx-large;
+}
+/* Custom Slider ends */

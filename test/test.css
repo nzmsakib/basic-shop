@@ -1,0 +1,24 @@
+#testBody .box1 {
+    width: 200px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background: linear-gradient(#000, #000) top /40% 3px no-repeat, #ccc
+}
+
+#testBody .box2 {
+    width: 200px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background: linear-gradient(red, red) bottom/ 60% 2px no-repeat, #ccc;
+}
+
+#testBody .box3 {
+    width: 200px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    background: linear-gradient(red, red)bottom left/ 60% 2px, linear-gradient(blue, blue) 60% 0 / 40% 2px, linear-gradient(brown, brown) left/ 3px 30%, linear-gradient(orange, orange) right / 3px 40%, #ccc;
+    background-repeat: no-repeat;
+}

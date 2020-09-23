@@ -1,0 +1,23 @@
+#userBody .login-reg-form-container {
+    width: 450px;
+}
+
+#userBody .form-control {
+    border: none;
+    display: table;
+    border-radius: 0%;
+    transition: border 1s;
+}
+
+#userBody .form-control:after {
+    border-bottom: 1px solid #f00;
+    content: '';
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+}
+
+#userBody .form-control:focus {
+    box-shadow: none;
+    border: 5px solid green;
+}
