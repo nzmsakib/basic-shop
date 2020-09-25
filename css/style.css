@@ -10,8 +10,21 @@ html, body {
 
 /* Variables starts */
 :root {
+    /* Colors  starts */
     --colorPrimary: #3366ff;
     --colorSecondary: #e6ecff;
+    --braceColor: black;
+    --braceColor2: red;
+    --braceColor3: green;
+    /* Colors ends  */
+    /* Gradients starts  */
+    --thirdBraceNormal: linear-gradient(var(--braceColor), var(--braceColor))left/ 2px 100%, linear-gradient(var(--braceColor), var(--braceColor))right/ 2px 100%, linear-gradient(var(--braceColor), var(--braceColor))top left/ 20px 2px, linear-gradient(var(--braceColor), var(--braceColor))top right/ 20px 2px, linear-gradient(var(--braceColor), var(--braceColor))bottom right/ 20px 2px, linear-gradient(var(--braceColor), var(--braceColor))bottom left/ 20px 2px;
+    --thirdBraceNormalFull: linear-gradient(var(--braceColor), var(--braceColor))left/ 2px 100%, linear-gradient(var(--braceColor), var(--braceColor))right/ 2px 100%, linear-gradient(var(--braceColor), var(--braceColor))top left/ 100% 2px, linear-gradient(var(--braceColor), var(--braceColor))top right/ 100% 2px, linear-gradient(var(--braceColor), var(--braceColor))bottom right/ 100% 2px, linear-gradient(var(--braceColor), var(--braceColor))bottom left/ 100% 2px;
+    --thirdBraceError: linear-gradient(var(--braceColor2), var(--braceColor2))left/ 2px 100%, linear-gradient(var(--braceColor2), var(--braceColor2))right/ 2px 100%, linear-gradient(var(--braceColor2), var(--braceColor2))top left/ 20px 2px, linear-gradient(var(--braceColor2), var(--braceColor2))top right/ 20px 2px, linear-gradient(var(--braceColor2), var(--braceColor2))bottom right/ 20px 2px, linear-gradient(var(--braceColor2), var(--braceColor2))bottom left/ 20px 2px;
+    --thirdBraceErrorFull: linear-gradient(var(--braceColor2), var(--braceColor2))left/ 2px 100%, linear-gradient(var(--braceColor2), var(--braceColor2))right/ 2px 100%, linear-gradient(var(--braceColor2), var(--braceColor2))top left/ 100% 2px, linear-gradient(var(--braceColor2), var(--braceColor2))top right/ 100% 2px, linear-gradient(var(--braceColor2), var(--braceColor2))bottom right/ 100% 2px, linear-gradient(var(--braceColor2), var(--braceColor2))bottom left/ 100% 2px;
+    --thirdBraceSuccess: linear-gradient(var(--braceColor3), var(--braceColor3))left/ 2px 100%, linear-gradient(var(--braceColor3), var(--braceColor3))right/ 2px 100%, linear-gradient(var(--braceColor3), var(--braceColor3))top left/ 20px 2px, linear-gradient(var(--braceColor3), var(--braceColor3))top right/ 20px 2px, linear-gradient(var(--braceColor3), var(--braceColor3))bottom right/ 20px 2px, linear-gradient(var(--braceColor3), var(--braceColor3))bottom left/ 20px 2px;
+    --thirdBraceSuccessFull: linear-gradient(var(--braceColor3), var(--braceColor3))left/ 2px 100%, linear-gradient(var(--braceColor3), var(--braceColor3))right/ 2px 100%, linear-gradient(var(--braceColor3), var(--braceColor3))top left/ 100% 2px, linear-gradient(var(--braceColor3), var(--braceColor3))top right/ 100% 2px, linear-gradient(var(--braceColor3), var(--braceColor3))bottom right/ 100% 2px, linear-gradient(var(--braceColor3), var(--braceColor3))bottom left/ 100% 2px;
+    /* Gradients ends  */
 }
 /* Variables ends  */
 
@@ -37,7 +50,7 @@ html, body {
     color: var(--colorSecondary);
 }
 
-.centre-v {
+.centre-vh {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -48,6 +61,47 @@ html, body {
     margin-top: 50px;
     display: block;
 }
+/* Custom Input starts */
+input[type=password].is-invalid, input[type=text].is-invalid {
+    background: var(--thirdBraceError);
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+
+input[type=password].is-invalid:focus, input[type=text].is-invalid:focus {
+    background: var(--thirdBraceErrorFull);
+    background-repeat: no-repeat;
+}
+
+input[type=password].is-valid, input[type=text].is-valid {
+    background: var(--thirdBraceSuccess);
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+
+input[type=password].is-valid:focus, input[type=text].is-valid:focus {
+    background: var(--thirdBraceSuccessFull);
+    background-repeat: no-repeat;
+}
+
+input[type=password], input[type=text] {
+    border: none;
+    border-radius: 0%;
+    background: var(--thirdBraceNormal);
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+
+input[type=password]:focus, input[type=text]:focus {
+    box-shadow: none;
+    background: var(--thirdBraceNormalFull);
+    background-repeat: no-repeat;
+}
+
+.custom-switch input[type=checkbox]:checked {
+    
+}
+/* Custom Input ends */
 /* Global Classes ends */
 
 /* Custom Slider starts */

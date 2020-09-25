@@ -19,6 +19,12 @@
     padding: 20px;
     margin: 10px auto;
     text-align: center;
-    background: linear-gradient(red, red)bottom left/ 60% 2px, linear-gradient(blue, blue) 60% 0 / 40% 2px, linear-gradient(brown, brown) left/ 3px 30%, linear-gradient(orange, orange) right / 3px 40%, #ccc;
+    background: linear-gradient(red, red)bottom left/ 10% 2px, linear-gradient(red, red)top right/ 10% 2px, linear-gradient(red, red)top left/ 10% 2px, linear-gradient(red, red)bottom right/ 10% 2px, linear-gradient(red, red)left/ 2px 100%, linear-gradient(red, red)right/ 2px 100%;
+    background-repeat: no-repeat;
+    transition: background-position 1s;
+}
+
+#testBody .box3:hover {
+    background-position: top left/50px 2px;
     background-repeat: no-repeat;
 }
