@@ -1,11 +1,18 @@
 html, body {
-    width: 100%;
     box-sizing: border-box;
-}
-
-*{
     margin: 0;
     padding: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
 }
 
 /* Variables starts */
@@ -96,10 +103,6 @@ input[type=password]:focus, input[type=text]:focus {
     box-shadow: none;
     background: var(--thirdBraceNormalFull);
     background-repeat: no-repeat;
-}
-
-.custom-switch input[type=checkbox]:checked {
-    
 }
 /* Custom Input ends */
 /* Global Classes ends */

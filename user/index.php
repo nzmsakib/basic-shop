@@ -47,7 +47,6 @@
         </div>
     </div>
 </main>
-<div class="space-v"></div>
 
 <?php
     include '../inc/footer.php';

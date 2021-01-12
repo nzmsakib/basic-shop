@@ -1,3 +1,8 @@
+#userBody {
+    margin: 0;
+    padding: 0;
+}
+
 #userBody .login-reg-form-container {
     position: relative;
     width: 450px;
